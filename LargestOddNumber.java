@@ -14,12 +14,12 @@ public class LargestOddNumber {
         String num1 = "52";
         String num2 = "4206";
         String num3 = "35427";
-        String num4 = "1010";
+    
 
         System.out.println("Input: " + num1 + " -> Output: " + largestOddNumber(num1));
         System.out.println("Input: " + num2 + " -> Output: " + largestOddNumber(num2));
         System.out.println("Input: " + num3 + " -> Output: " + largestOddNumber(num3));
-        System.out.println("Input: " + num4 + " -> Output: " + largestOddNumber(num4));
+       
     }
 }
 
