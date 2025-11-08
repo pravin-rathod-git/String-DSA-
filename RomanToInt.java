@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class RomanToInt {
     public static int romanToInt(String s) {
         // Step 1: Create a mapping of Roman numerals
