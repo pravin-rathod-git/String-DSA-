@@ -8,11 +8,22 @@ public class LongestCommonPrefix {
         // Compare the prefix with each string
         for (int i = 1; i < strs.length; i++) {
             // While the current string doesn't start with prefix,
-            // keep reducing prefix length
-            while (strs[i].indexOf(prefix) != 0) {
-                prefix = prefix.substring(0, prefix.length() - 1);
-                if (prefix.isEmpty()) return "";
+            String s = strs[i];
+            int j = 0;
+
+            // Compare characters until mismatch
+            while (j < s.length() && j < prefix.length()
+                    && s.charAt(j) == prefix.charAt(j)) {
+                j++;
             }
+
+            // If no char matched → no prefix
+            if (j == 0) {
+                return "";
+            }
+
+            // Shrink prefix
+            prefix = prefix.substring(0, j);
         }
 
         return prefix;

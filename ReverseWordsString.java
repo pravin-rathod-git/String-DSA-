@@ -1,4 +1,4 @@
-public public class ReverseWords {
+public public class ReverseWordsString {
 
     public static String reverseWords(String s) {
         int n = s.length();
